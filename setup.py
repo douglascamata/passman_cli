@@ -12,7 +12,7 @@ if sys.argv[-1] == 'publish':
     os.system('python setup.py sdist upload')
     sys.exit()
 
-readme = open('README.rst').read()
+readme = open('README.md').read()
 doclink = """
 Documentation
 -------------
@@ -27,11 +27,16 @@ setup(
     long_description=readme + '\n\n' + doclink + '\n\n' + history,
     author='Douglas Camata',
     author_email='d.camata@gmail.com',
-    url='https://github.com/douglascamata/passman-cli',
+    url='https://github.com/douglascamata/passman_cli',
     packages=[
         'passman_cli',
     ],
     package_dir={'passman_cli': 'passman_cli'},
+    entry_points={
+        'console_scripts': [
+            'passman = passman_cli.entrypoint:main'
+        ]
+    },
     include_package_data=True,
     install_requires=[
     ],

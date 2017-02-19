@@ -20,7 +20,11 @@ def entrypoint(ctx, config, base_url, user, password):
         ctx.obj["passman"] = PassmanApi(base_url, (user, password))
 
 
-if __name__ == '__main__':
+def main():
     entrypoint.add_command(vault.entry_point)
     entrypoint.add_command(credential.entry_point)
     entrypoint(obj={})
+
+
+if __name__ == '__main__':
+    main()
