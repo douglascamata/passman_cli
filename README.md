@@ -5,7 +5,8 @@ A CLI to access data from a [Passman](https://github.com/nextcloud/passman) inst
 ## Installation
 
 There is still no version pushed to PyPi, so you can still by cloning this
-repository and running `python setup.py install`.
+repository and running `python setup.py install`. A `passman` command will be
+available in your shell.
 
 ## Development
 
@@ -15,7 +16,7 @@ repository and running `python setup.py install`.
 
 ## Usage
 
-To learn more about the usage please run `passman_cli --help`.
+To learn more about the usage please run `passman --help`.
 
 ## Config File
 
