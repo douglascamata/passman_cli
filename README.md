@@ -19,4 +19,9 @@ and your username and password. You can send a path to the config file using the
 `passman_cli.toml` at the current working dir and at `~/.config/`, in this exact
 order.
 
-Here's an example of configuration
+Here's an example of configuration:
+
+```toml
+base_url = "https://my.nextcloud/apps/passman/api/v2"
+auth = ["admin", "password"]
+```
