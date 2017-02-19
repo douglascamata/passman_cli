@@ -4,8 +4,14 @@ A CLI to access data from a [Passman](https://github.com/nextcloud/passman) inst
 
 ## Installation
 
-- Install `pip` with `[sudo] easy_install pip`, in case you don't have it yet.
-- Run `[sudo] pip install passman_cli`
+There is still no version pushed to PyPi, so you can still by cloning this
+repository and running `python setup.py install`.
+
+## Development
+
+1. Clone this repository
+2. Install the development requirements: `pip install -r requirements.txt`
+3. (Optional) Install the egg in `develop` mode: `python setup.py develop`
 
 ## Usage
 

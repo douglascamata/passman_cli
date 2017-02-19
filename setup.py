@@ -39,10 +39,16 @@ setup(
     },
     include_package_data=True,
     install_requires=[
+        "requests",
+        "pycryptodome",
+        "sjcl"
+    ],
+    dependency_links=[
+        "https://github.com/arnuschky/sjcl/tarball/master#egg=sjcl"
     ],
     license='MIT',
     zip_safe=False,
-    keywords='passman-cli',
+    keywords='passman_cli, passman, security',
     classifiers=[
         'Development Status :: 2 - Pre-Alpha',
         'Intended Audience :: Developers',
