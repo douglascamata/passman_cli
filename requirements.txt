@@ -1,0 +1,5 @@
+wheel>=0.22
+requests
+-e git://github.com/arnuschky/sjcl.git#egg=sjcl
+pycryptodome
+toml
