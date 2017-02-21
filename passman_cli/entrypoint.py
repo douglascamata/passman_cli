@@ -1,9 +1,9 @@
 import json
 import click
 import toml
-from cli import vault, credential
-from api import PassmanApi
-from config import find_config
+from passman_cli.cli import vault, credential
+from passman_cli.api import PassmanApi
+from passman_cli.config import find_config
 
 
 @click.group()

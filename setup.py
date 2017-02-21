@@ -4,9 +4,9 @@ import os
 import sys
 
 try:
-    from setuptools import setup
+    from setuptools import setup, find_packages
 except ImportError:
-    from distutils.core import setup
+    from distutils.core import setup, find_packages
 
 if sys.argv[-1] == 'publish':
     os.system('python setup.py sdist upload')
@@ -28,10 +28,7 @@ setup(
     author='Douglas Camata',
     author_email='d.camata@gmail.com',
     url='https://github.com/douglascamata/passman_cli',
-    packages=[
-        'passman_cli',
-    ],
-    package_dir={'passman_cli': 'passman_cli'},
+    packages=find_packages(exclude=['docs', 'tests', 'samples']),
     entry_points={
         'console_scripts': [
             'passman = passman_cli.entrypoint:main'
